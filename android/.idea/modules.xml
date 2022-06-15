@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/android.iml" filepath="$PROJECT_DIR$/.idea/modules/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-521443631/android.capacitor-android.iml" filepath="$PROJECT_DIR$/.idea/modules/-521443631/android.capacitor-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/394335344/android.capacitor-app.iml" filepath="$PROJECT_DIR$/.idea/modules/394335344/android.capacitor-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-645841161/android.capacitor-browser.iml" filepath="$PROJECT_DIR$/.idea/modules/-645841161/android.capacitor-browser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-68440266/android.capacitor-camera.iml" filepath="$PROJECT_DIR$/.idea/modules/-68440266/android.capacitor-camera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/capacitor-cordova-android-plugins/android.capacitor-cordova-android-plugins.iml" filepath="$PROJECT_DIR$/.idea/modules/capacitor-cordova-android-plugins/android.capacitor-cordova-android-plugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1800000597/android.capacitor-geolocation.iml" filepath="$PROJECT_DIR$/.idea/modules/1800000597/android.capacitor-geolocation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1491337077/android.capacitor-haptics.iml" filepath="$PROJECT_DIR$/.idea/modules/-1491337077/android.capacitor-haptics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1291834808/android.capacitor-keyboard.iml" filepath="$PROJECT_DIR$/.idea/modules/1291834808/android.capacitor-keyboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/328469614/android.capacitor-share.iml" filepath="$PROJECT_DIR$/.idea/modules/328469614/android.capacitor-share.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1119871049/android.capacitor-status-bar.iml" filepath="$PROJECT_DIR$/.idea/modules/1119871049/android.capacitor-status-bar.iml" />
+    </modules>
+  </component>
+</project>

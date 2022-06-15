@@ -1,0 +1,58 @@
+<ion-content>
+  <app-home-header [name]="name"></app-home-header>
+
+  <ion-grid>
+    <ion-row class="ion-margin-top">
+      <ion-col class="ion-align-self-baseline">
+        <h3 class="h3-css">Categories</h3>
+      </ion-col>
+      <ion-col class="ion-align-self-baseline">
+        <ion-item lines="none" detail="true" class="detail-icon-css" routerLink="/tabs/home/select-service">
+          <ion-label class="ion-text-end" color="primary">View All</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-slides pager="false" [options]="slideOpts">
+      <ion-slide *ngFor="let category of categoryList" routerLink="/tabs/home/select-service">
+        <div class="aspect-set">
+          <div class="scroll-category">
+            <!-- <img width="76px" height="76px" [src]="category.image" /> -->
+            <img class="image-sqr" [src]="url+category.image" />
+          </div>
+          <ion-label>{{category.name}}</ion-label>
+        </div>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-row class="ion-margin-top">
+      <ion-col class="ion-align-self-baseline">
+        <h3 class="h3-css">Recommended</h3>
+      </ion-col>
+      <ion-col class="ion-align-self-baseline">
+        <ion-item lines="none" detail="true" class="detail-icon-css" routerLink="/recommended-list">
+          <ion-label class="ion-text-end" color="primary">View All</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-list>
+      <ion-card *ngFor="let recommend of recommendationList">
+        <ion-card-content>
+          <img [src]="url+recommend.working_partner.profile_image" width="150px" height="150px" />
+          <div>
+            <ion-item lines="none">
+              <img slot="start" src="/assets/images/star.svg" width="22px" />
+              <ion-label class="label-css">Avg Rating: </ion-label>
+              <ion-badge slot="end" style="font-size: large;"><strong>{{recommend.working_partner.working_partner_average_ratings_count}}</strong></ion-badge>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-label style="white-space: break-spaces;" color="primary">{{recommend.working_partner?.category_id}}</ion-label>
+            </ion-item>
+            <p class="ion-padding-start">By {{recommend.name}}</p>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </ion-grid>
+</ion-content>

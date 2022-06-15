@@ -1,0 +1,55 @@
+<ion-app>
+  <ion-menu side="start" menuId="m1" type="overlay" contentId="my-content">
+    <ion-content>
+      <div class="divStyle">
+        <ion-label (click)="onMenuClose()" style="padding: 3vw; font-size: 32px;">
+          <ion-icon name="close-outline" color="light"></ion-icon>
+        </ion-label>
+      </div>
+      <ion-item class="divStyle" style="--background: transparent;" lines="none">
+        <img src="/assets/images/person-secondary.svg" class="image-css" />
+        <ion-label color="secondary" class="menu-label-top">
+          Welcome to
+          <p style="color: var(--ion-color-secondary); font-size: 22px;">The Ninja<strong> Care</strong></p>
+        </ion-label>
+      </ion-item>
+      <ion-list>
+        <ion-menu-toggle>
+          <ion-item lines="none" button routerDirection="root" [routerLink]="['/wallet']">
+            <img src="/assets/images/exclamation.svg" />
+            <ion-label class="menu-label">Wallet</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openModal('complaints')">
+            <img src="/assets/images/exclamation.svg" />
+            <ion-label class="menu-label">Complaints</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openModal('suggestion')">
+            <img src="/assets/images/idea.svg" />
+            <ion-label class="menu-label">Suggestion</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openCapacitorSite('terms')">
+            <img src="/assets/images/file.svg" />
+            <ion-label class="menu-label">Terms & Condition</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openCapacitorSite('privacy')">
+            <img src="/assets/images/shield.svg" />
+            <ion-label class="menu-label">Privacy Policy</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="openCapacitorSite('about')">
+            <img src="/assets/images/info.svg" />
+            <ion-label class="menu-label">About App</ion-label>
+          </ion-item>
+          <ion-item lines="none" button routerDirection="root" (click)="onContact()">
+            <img src="/assets/images/call.svg" />
+            <ion-label class="menu-label">Contact</ion-label>
+          </ion-item>
+          <ion-item lines="none" button (click)="presentAlert()">
+            <img src="/assets/images/exit.svg" />
+            <ion-label class="menu-label">Logout</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="my-content"></ion-router-outlet>
+</ion-app>=

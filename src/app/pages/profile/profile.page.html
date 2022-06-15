@@ -1,0 +1,63 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar style="--background: transparent;">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1">
+        <img src="/assets/images/menu.svg" />
+      </ion-menu-button>
+    </ion-buttons>
+    <ion-title color="primary">Profile</ion-title>
+    <ion-buttons slot="end" color="primary">
+      <ion-button routerLink="/notifications">
+        <ion-icon name="notifications" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="6" offset-xl="3">
+        <div class="div-center" (click)="takePicture()">
+          <img src="/assets/images/user.png" width="149px" *ngIf="imageUrl == null" />
+          <img [src]="imageUrl" width="149px" height="149px" *ngIf="imageUrl != null" style="border-radius: 50%;" />
+          <h2><strong>Hi there, {{userData.name}}!</strong></h2>
+          <div class="camera-icon-css">
+            <ion-icon name="camera" color="light"></ion-icon>
+          </div>
+        </div>
+        <form [formGroup]="profileForm" (ngSubmit)="update()">
+          <ion-list>
+            <ion-label class="ion-padding-left label-css">Name</ion-label>
+            <ion-item class="input ion-margin-vertical" lines="none">
+              <ion-label class="ion-padding-left">Name</ion-label>
+              <ion-input formControlName="name" type="text" placeholder="Enter your name"></ion-input>
+            </ion-item>
+            <ion-label class="ion-padding-left label-css">Email</ion-label>
+            <ion-item class="input ion-margin-vertical" lines="none">
+              <ion-label class="ion-padding-left">Email</ion-label>
+              <ion-input formControlName="email" type="email" placeholder="Enter your email"></ion-input>
+            </ion-item>
+            <ion-label class="ion-padding-left label-css">Phone Number</ion-label>
+            <ion-item class="input ion-margin-vertical" lines="none">
+              <ion-label class="ion-padding-left">Phone Number</ion-label>
+              <ion-input formControlName="mobile" type="tel" placeholder="Enter your phone number" minlength="10" maxlength="10"></ion-input>
+            </ion-item>
+            <ion-label class="ion-padding-left label-css">Address</ion-label>
+            <ion-item class="input ion-margin-vertical" lines="none">
+              <ion-label class="ion-padding-left">Address</ion-label>
+              <ion-textarea rows="3" formControlName="address" type="text" placeholder="Enter your address"></ion-textarea>
+            </ion-item>
+          </ion-list>
+          <ion-row>
+            <ion-col>
+              <ion-button type="submit" expand="block" shape="round" color="secondary-primary" [disabled]="!profileForm.valid">
+                Update
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

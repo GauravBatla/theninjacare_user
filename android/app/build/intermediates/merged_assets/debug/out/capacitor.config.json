@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "theNinjaCare",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

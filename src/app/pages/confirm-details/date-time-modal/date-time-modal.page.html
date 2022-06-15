@@ -1,0 +1,11 @@
+<!-- <ion-header>
+  <ion-toolbar style="--background: transparent;">
+    <ion-title>dateTimeModal</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-datetime presentation="date" size="cover" (ionChange)="selectDate($event)" *ngIf="mode == 'start_date' || mode == 'end_date'" showDefaultButtons="true"></ion-datetime>
+
+  <ion-datetime presentation="time" size="cover" (ionChange)="selectDate($event)" *ngIf="mode == 'start_time' || mode == 'end_time'" showDefaultButtons="true"></ion-datetime>
+</ion-content>

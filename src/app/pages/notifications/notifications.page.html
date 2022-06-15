@@ -1,0 +1,23 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar style="--background: transparent;">
+    <ion-buttons slot="start">
+      <ion-back-button text="" defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="primary">Notifications</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="6" offset-xl="3">
+        <ion-list>
+          <ion-item lines="none" *ngFor="let notify of notificationList">
+            <ion-icon name="ellipse" slot="start" color="primary" style="font-size: 8px;"></ion-icon>
+            <ion-label style="white-space: break-spaces;">{{notify.message}} <span class="ion-text-right" style="font-size: smaller;">{{notify.created_at | date}}</span></ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

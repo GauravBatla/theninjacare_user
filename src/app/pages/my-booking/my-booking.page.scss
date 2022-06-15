@@ -1,0 +1,41 @@
+ion-card {
+  margin: 2px 2px 12px 2px;
+
+  ion-card-header {
+    padding: 3%;
+  }
+
+  ion-card-content {
+    padding: 0px !important;
+  }
+}
+
+ion-segment {
+  ion-segment-button {
+    margin: 5px;
+    --background: var(--ion-color-tertiary);
+    border-radius: 30px;
+    --background-checked: var(--ion-color-primary);
+    --indicator-height: 0px;
+    width: 33vw;
+  }
+}
+
+.empty-booking {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--ion-color-light-shade);
+  margin-top: 20vh;
+
+  ion-icon {
+    font-size: 8rem;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}

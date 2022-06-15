@@ -1,0 +1,29 @@
+<!-- <ion-header>
+  <ion-toolbar style="--background: transparent;">
+    <ion-title>share</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="6" offset-xl="3">
+        <div class="top-header ion-text-center">
+          <div class="logo">
+            <img src="/assets/images/share-1.png" class="centerIMG" />
+          </div>
+          <h1 style="font-size: 32px;">The Ninja Care</h1>
+          <p style="font-size: 22px; color: var(--ion-color-primary);">Share the app and invite to unlock great rewards.</p>
+          <h1 class="refer-code">{{refer_code}}</h1>
+          <ion-row>
+            <ion-col class="ion-margin-top">
+              <ion-button expand="block" color="secondary" (click)="share()">
+                Share to friends
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

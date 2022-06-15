@@ -1,0 +1,50 @@
+.h3-css {
+  color: var(--ion-color-primary); 
+  font-weight: bold; 
+  margin: 0px;
+}
+
+.detail-icon-css {
+  --detail-icon-color: #0C3469 !important;
+}
+
+.aspect-set {
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  ion-label {
+    color: var(--ion-color-primary);
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.scroll-category {
+  align-self: center;
+  background: var(--ion-color-primary);
+  border-radius: 50%;
+  padding: 2vh;
+  width: 16vw;
+  height: 16vw;
+
+  .image-sqr{
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+
+ion-card {
+  margin: 2px 2px 12px 2px;
+  border-radius: 2px;
+
+  ion-card-content {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: row;
+
+    .label-css {
+      font-size: 20px; 
+      margin-bottom: 7px;
+    }
+  }
+}

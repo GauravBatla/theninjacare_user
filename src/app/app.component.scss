@@ -1,0 +1,37 @@
+ion-content {
+  --background: var(--ion-color-primary);
+  ion-list {
+    background: transparent;
+    ion-item {
+      --background: transparent;
+      margin-bottom: 8%;
+      --detail-icon-color: #fff;
+    }
+  }
+}
+
+.divStyle {
+  margin-top: 13vw;
+  margin-left: 3vw;
+  margin-bottom: 8vw;
+}
+
+.image-css {
+  background: var(--ion-color-light);
+  padding: 4%;
+  border-radius: 50%;
+}
+
+.menu-label {
+  color: var(--ion-color-light);
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10%;
+}
+
+.menu-label-top {
+  color: var(--ion-color-secondary);
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10%;
+}

@@ -1,0 +1,6 @@
+{
+	"appId": "com.theninjacare.user",
+	"appName": "theNinjaCare",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

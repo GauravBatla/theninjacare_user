@@ -1,0 +1,15 @@
+ion-card {
+  margin: 2px 2px 12px 2px;
+  border-radius: 2px;
+
+  ion-card-content {
+    padding: 0px !important;
+    display: flex;
+    flex-direction: row;
+
+    .label-css {
+      font-size: 20px;
+      margin-bottom: 7px;
+    }
+  }
+}

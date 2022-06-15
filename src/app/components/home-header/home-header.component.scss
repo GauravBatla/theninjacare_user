@@ -1,0 +1,29 @@
+.div-style {
+  background-image: url("/assets/images/random.jpg");
+  background-size: cover;
+  padding-top: 10%;
+  //   height: 30vh;
+
+  .flex-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  ion-item {
+    --background: transparent;
+    // color: var(--ion-color-light);
+    padding-top: 4%;
+  }
+
+  .div-icon {
+    font-size: 31px;
+    padding-right: 2%;
+  }
+
+  .h1-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--ion-color-primary);
+  }
+}

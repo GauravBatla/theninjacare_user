@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      {{type == 'complaints' ? 'Complaint Form' : 'Suggestion Form'}}
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="light" (click)="onDismiss()">
+        <ion-icon name="close" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngIf="type == 'complaints' || type == 'suggestion'">
+      <ion-col size-xl="6" offset-xl="3">
+        <form [formGroup]="queryForm" (ngSubmit)="submit()">
+          <ion-list>
+            <ion-label color="primary" class="ion-padding-start">Name</ion-label>
+            <ion-item lines="none" class="input ion-margin-bottom">
+              <ion-label>Name</ion-label>
+              <ion-input formControlName="name" type="text" placeholder="Enter your name"></ion-input>
+            </ion-item>
+            <ion-label color="primary" class="ion-padding-start">Phone</ion-label>
+            <ion-item lines="none" class="input ion-margin-bottom">
+              <ion-label>Phone</ion-label>
+              <ion-input formControlName="phone" type="tel" placeholder="Enter your phone" minlength="10" maxlength="10"></ion-input>
+            </ion-item>
+            <ion-label color="primary" class="ion-padding-start">Email</ion-label>
+            <ion-item lines="none" class="input ion-margin-bottom">
+              <ion-label>Email</ion-label>
+              <ion-input formControlName="email" type="email" placeholder="Enter your email"></ion-input>
+            </ion-item>
+            <ion-label color="primary" class="ion-padding-start">Query</ion-label>
+            <ion-item lines="none" class="input ion-margin-bottom">
+              <ion-label>Query</ion-label>
+              <ion-textarea rows="3" formControlName="query" type="text" placeholder="Enter your query"></ion-textarea>
+            </ion-item>
+          </ion-list>
+          <ion-row *ngIf="type == 'complaints'">
+            <ion-col class="ion-margin-top">
+              <ion-button type="submit" expand="block" color="secondary-primary">
+                Raise Issue
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="type == 'suggestion'">
+            <ion-col class="ion-margin-top">
+              <ion-button type="submit" expand="block" color="secondary-primary">
+                Submit Suggestion
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </form>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row *ngIf="type == 'terms' || type == 'privacy' || type == 'about'">
+      <ion-col size-xl="6" offset-xl="3">
+        <div [innerHTML]="HTMLData"></div>
+      </ion-col>
+    </ion-row> -->
+  </ion-grid>
+</ion-content>

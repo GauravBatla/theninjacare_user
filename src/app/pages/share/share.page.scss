@@ -1,0 +1,18 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.centerIMG {
+  width: 55%;
+  margin-bottom: 5%;
+}
+
+.refer-code {
+  background: var(--ion-color-light-tint);
+  padding: 4%;
+  border: 1px solid var(--ion-color-medium);
+  border-radius: 20px;
+}
